@@ -1,0 +1,165 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    color: #fff; 
+    font-family: 'Sarpanch', sans-serif; 
+}
+
+@font-face {
+    font-family: headliner;
+    src: url(headliner.ttf);
+}
+
+.header {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nav-image img {
+    max-width: 123.78px;
+    height: 46.99px;
+}
+
+.nav-text h3 {
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FFDE40;
+}
+
+
+form {
+    text-align: left; 
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    color: #FFDE40;
+    margin-right: 10px; 
+}
+
+input[type="text"] {
+    flex: 2; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #000; 
+    color: #fff; 
+    font-family: 'Sarpanch', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .payment-card {
+        flex-direction: row;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    .user-card-info {
+        margin-right: 20px; 
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+.payment-card {
+    border-radius: 10px;
+    padding: 20px;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid #6C6A42; 
+    margin-top: 50px; 
+}
+
+.payment-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #FFDE40, transparent, #FFDE40) 1;
+    border-image-slice: 1;
+    border-radius: 8px;
+}
+
+
+.card-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFDE40; 
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #6C6A42; 
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.radio-buttons {
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-label label {
+    font-weight: 700;
+    border-radius: 2px;
+    color: white;
+    margin-right: 10px;
+}
+
+select {
+    flex: 2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.submit-button button {
+    background-color: #FFDE40;
+    color: black;
+    font-family: 'headliner';
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 20px;
+}

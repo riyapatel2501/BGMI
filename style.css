@@ -1,0 +1,205 @@
+/* Common styles for both pages */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: headliner;
+    src: url(headliner.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@400;700;900&family=Sarpanch&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+/* Styles for Page One */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/image\ 2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.hero {
+    margin-bottom: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    width: 100%;
+}
+
+.text h3, .text h1 {
+    font-size: 103px;
+    line-height: 104px;
+    letter-spacing: 0em;
+    text-align: right;
+    white-space: nowrap;
+    margin-bottom: 20px; /* Add margin to separate heading tags from the button */
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1281px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Styles for Page Two */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.banner-section {
+    padding: 20px;
+    margin-top: 40px;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+.banner-section nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav-image img {
+    max-width: 123.78px;
+    height: 46.99px;
+}
+
+.nav-text h3 {
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FFDE40;
+}
+
+.wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 40px;
+    width: 650px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+.user-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #FFDE40, transparent, #FFDE40) 1;
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+
+.user-card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.user-card-img h3 {
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.user-card-img img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.user-card-info {
+    text-align: center;
+    z-index: 2;
+}
+
+.user-card-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFDE40;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.user-card-info p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+}
+
+.user-card-info p span {
+    font-weight: 400;
+    color: #6C6A42;
+    margin-right: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .user-card {
+        flex-direction: row;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    .user-card-img {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .user-card-info {
+        text-align: left;
+    }
+}
